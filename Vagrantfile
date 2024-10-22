@@ -7,10 +7,7 @@
 # you're doing.
 Vagrant.configure("2") do |config| 
   config.vm.box = "debian/bookworm64"
-  config.vm.provision "shell", inline: <<-SHELL
-     apt-get update
-     apt-get install -y apache2
-   SHELL
+
   config.vm.define "venus" do |venus|
     venus.vm.network "private_network", ip: "192.168.57.102"
     venus.vm.hostname = "venus.sistema.test"
@@ -18,6 +15,10 @@ Vagrant.configure("2") do |config|
         vb.memory = "1024"
         vb.name = "venus"
     end
+    venus.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y bind9 bind9utils bind9-doc
+    SHELL
    # venus.vm.provision :shell, :path => "bootstrapVenus.sh"
   end
   config.vm.define "tierra" do |tierra|
@@ -27,6 +28,10 @@ Vagrant.configure("2") do |config|
         vb.memory = "1024"
         vb.name = "tierra"
     end
+    tierra.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y bind9 bind9utils bind9-doc
+    SHELL
   #  tierra.vm.provision :shell, :path => "bootstrapVenus.sh"
   end
 
