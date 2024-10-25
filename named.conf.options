@@ -11,5 +11,5 @@ options {
         };
 
         max-ncache-ttl 7200;  # Tiempo en segundos para respuestas negativas (2 horas)
-        auth-nxdomain no;
+       
 };

@@ -247,3 +247,25 @@ mail.sistema.test.      86400   IN      A       192.168.57.104
 ;; SERVER: 192.168.57.102#53(192.168.57.102) (UDP)
 ;; WHEN: Fri Oct 25 12:10:41 UTC 2024
 ;; MSG SIZE  rcvd: 106
+
+ dig @192.168.57.103 sistema.test AXFR
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> @192.168.57.103 sistema.test AXFR
+; (1 server found)
+;; global options: +cmd
+sistema.test.           86400   IN      SOA     tierra.sistema.test. admin.sistema.test. 2023102501 3600 1800 1209600 86400
+sistema.test.           86400   IN      MX      10 mail.sistema.test.
+sistema.test.           86400   IN      NS      venus.sistema.test.
+sistema.test.           86400   IN      NS      tierra.sistema.test.
+mail.sistema.test.      86400   IN      A       192.168.57.104
+marte.sistema.test.     86400   IN      A       192.168.57.104
+mercurio.sistema.test.  86400   IN      A       192.168.57.101
+ns1.sistema.test.       86400   IN      CNAME   tierra.sistema.test.
+ns2.sistema.test.       86400   IN      CNAME   venus.sistema.test.
+tierra.sistema.test.    86400   IN      A       192.168.57.103
+venus.sistema.test.     86400   IN      A       192.168.57.102
+sistema.test.           86400   IN      SOA     tierra.sistema.test. admin.sistema.test. 2023102501 3600 1800 1209600 86400
+;; Query time: 3 msec
+;; SERVER: 192.168.57.103#53(192.168.57.103) (TCP)
+;; WHEN: Fri Oct 25 15:55:30 UTC 2024
+;; XFR size: 12 records (messages 1, bytes 340)

@@ -18,6 +18,11 @@ Vagrant.configure("2") do |config|
     venus.vm.provision "shell", inline: <<-SHELL
       apt-get update
       apt-get install -y bind9 bind9utils bind9-doc
+      cp -v /vagrant/named /etc/default/named
+      cp -v /vagrant/local-venus /etc/bind/named.conf.local
+      cp -v /vagrant/named.conf.options /etc/bind/named.conf.options
+      systemctl restart named
+
     SHELL
    # venus.vm.provision :shell, :path => "bootstrapVenus.sh"
   end
@@ -31,6 +36,12 @@ Vagrant.configure("2") do |config|
     tierra.vm.provision "shell", inline: <<-SHELL
       apt-get update
       apt-get install -y bind9 bind9utils bind9-doc
+      cp -v /vagrant/named.conf.local /etc/bind/named.conf.local
+      cp -v /vagrant/named.conf.options /etc/bind/named.conf.options
+      cp -v /vagrant/named /etc/default/named
+      cp -v /vagrant/db.sistema.test /etc/bind/db.sistema.test
+      cp -v /vagrant/db.192.168.57 /etc/bind/db.192.168.57
+      systemctl restart named
     SHELL
   #  tierra.vm.provision :shell, :path => "bootstrapVenus.sh"
   end
