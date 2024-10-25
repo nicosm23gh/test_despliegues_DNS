@@ -1,0 +1,93 @@
+dig @192.168.57.103 tierra.sistema.test A
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> @192.168.57.103 tierra.sistema.test A  
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33230
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 7bd78f1f92e561a401000000671b818b0c36a5d6727b9109 (good)
+;; QUESTION SECTION:
+;tierra.sistema.test.           IN      A
+
+;; ANSWER SECTION:
+tierra.sistema.test.    86400   IN      A       192.168.57.103
+
+;; Query time: 0 msec
+;; SERVER: 192.168.57.103#53(192.168.57.103) (UDP)
+;; WHEN: Fri Oct 25 11:31:23 UTC 2024
+;; MSG SIZE  rcvd: 92
+
+
+dig @192.168.57.103 venus.sistema.test A
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> @192.168.57.103 venus.sistema.test A   
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64373
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 13e515162a71231d01000000671b81ebb3e766e46013588c (good)
+;; QUESTION SECTION:
+;venus.sistema.test.            IN      A
+
+;; ANSWER SECTION:
+venus.sistema.test.     86400   IN      A       192.168.57.102
+
+;; Query time: 0 msec
+;; SERVER: 192.168.57.103#53(192.168.57.103) (UDP)
+;; WHEN: Fri Oct 25 11:32:59 UTC 2024
+;; MSG SIZE  rcvd: 91
+
+dig @192.168.57.103 marte.sistema.test A
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> @192.168.57.103 marte.sistema.test A   
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58547
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 3d5942e7b5e08fd601000000671b8261368baf025203d668 (good)
+;; QUESTION SECTION:
+;marte.sistema.test.            IN      A
+
+;; ANSWER SECTION:
+marte.sistema.test.     86400   IN      A       192.168.57.104
+
+;; Query time: 4 msec
+;; SERVER: 192.168.57.103#53(192.168.57.103) (UDP)
+;; WHEN: Fri Oct 25 11:34:57 UTC 2024
+;; MSG SIZE  rcvd: 91
+
+
+dig @192.168.57.103 mercurio.sistema.test A
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> @192.168.57.103 mercurio.sistema.test A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18490
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: ef9ce1ede263759101000000671b82884bf030123ea59e05 (good)
+;; QUESTION SECTION:
+;mercurio.sistema.test.         IN      A
+
+;; ANSWER SECTION:
+mercurio.sistema.test.  86400   IN      A       192.168.57.101
+
+;; Query time: 0 msec
+;; SERVER: 192.168.57.103#53(192.168.57.103) (UDP)
+;; WHEN: Fri Oct 25 11:35:36 UTC 2024
+;; MSG SIZE  rcvd: 94
