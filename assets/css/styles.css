@@ -1,0 +1,1292 @@
+
+
+
+/*--------------------------------------fonts config---------------------------*/
+@font-face {
+    font-family: "RobotoBlack";
+    src: url(../fonts/Roboto-Black.ttf),
+         url(../fonts/roboto-black-webfont.woff),
+         url(../fonts/roboto-black-webfont.woff2),
+         url(../fonts/Roboto-Bold.ttf),
+         url(../fonts/roboto-bold-webfont.woff),
+         url(../fonts/roboto-bold-webfont.woff2),
+         url(../fonts/Roboto-Medium.ttf),
+         url(../fonts/roboto-medium-webfont.woff),
+         url(../fonts/roboto-medium-webfont.woff2),
+         url(../fonts/Roboto-Regular.ttf),
+         url(../fonts/roboto-regular-webfont.woff),
+         url(../fonts/roboto-regular-webfont.woff2),
+         url(../fonts/Roboto-Light.ttf),
+         url(../fonts/roboto-light-webfont.woff),
+         url(../fonts/roboto-light-webfont.woff2),
+         url(../fonts/Roboto-Thin.ttf),
+         url(../fonts/roboto-thin-webfont.woff),
+         url(../fonts/roboto-thin-webfont.woff2);
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf),
+         url(../fonts/roboto-bold-webfont.woff),
+         url(../fonts/roboto-bold-webfont.woff2);
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: 
+
+         url(../fonts/Roboto-Medium.ttf),
+         url(../fonts/roboto-medium-webfont.woff),
+         url(../fonts/roboto-medium-webfont.woff2);
+}
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../fonts/Roboto-Regular.ttf),
+         url(../fonts/roboto-regular-webfont.woff),
+         url(../fonts/roboto-regular-webfont.woff2);
+}
+@font-face {
+    font-family: "RobotoLight";
+    src: url(../fonts/Roboto-Light.ttf),
+         url(../fonts/roboto-light-webfont.woff),
+         url(../fonts/roboto-light-webfont.woff2);
+}
+@font-face {
+    font-family: "RobotoThin";
+    src: url(../fonts/Roboto-Thin.ttf),
+         url(../fonts/roboto-thin-webfont.woff),
+         url(../fonts/roboto-thin-webfont.woff2);
+}
+
+
+
+@font-face {
+    font-family: "BebasNeue" ;
+    src: url(../fonts/BebasNeue-Regular.ttf),
+         url(../fonts/bebasneue-regular-webfont.woff),
+         url(../fonts/bebasneue-regular-webfont.woff2);
+        
+}
+
+@font-face {
+    font-family: "Headliner45";
+    src: url(../fonts/HeadlinerNo.45\ DEMO.ttf),
+         url(../fonts/headlinerno.45_demo-webfont.woff),
+         url(../fonts/headlinerno.45_demo-webfont.woff2);
+}
+/*--------------------------------------audio config---------------------------*/
+audio {
+    width: 400px; /* Ancho del reproductor */
+    height: 30px; /* Alto del reproductor */
+    border: none; /* Sin bordes */
+    padding: 0;
+    margin: 0.5rem;
+}
+
+
+
+ 
+/*--------------------------------------general config---------------------------*/
+
+*{
+    box-sizing: border-box;
+    
+}
+
+strong{
+    font-family: RobotoBold;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: RobotoLight;
+    font-size: 22px;
+    text-align: justify;
+ 
+    scroll-behavior: smooth;
+    color: white;
+    
+    
+}
+.body{
+
+    
+    overflow: hidden;
+}
+
+h1{
+    font-family: BebasNeue;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2{
+    font-family: BebasNeue;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+h4{
+    font-family: BebasNeue;
+    margin:0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+}
+
+
+.flexcontainer_row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-width: 360px;
+    
+}
+
+.flexcontainer_col{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    min-width: 360px;
+    
+    
+}
+
+/*---------------------------------------------------HERO SECTION-------------------------------*/
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg_hs.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    min-width: 360px;
+    margin: 0 ;
+}
+
+
+
+nav{
+    flex: 1; 
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: white;
+    justify-content: center;
+    
+    padding: 2rem 8%;
+    overflow: hidden;
+    padding: 0.5rem 8%;
+
+}
+
+.navegation{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo{
+    flex: 1 0 100px;
+    padding: .5rem 0;
+    height: 100%;
+    background-image: url(../images/logo-neu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.menu{
+    flex: 7 0 440px; /*junto al overflow, escondemos solo el home al contraer, ya que estamos en el hero section*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+#menu_on{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+#menu_on li{
+    text-align: right;
+}
+
+#menu_on li a{
+    text-decoration: none;
+    font-family: Headliner45;
+    font-size: 40px;
+    color: #8d4e9a;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+
+#menu_on li a:hover{
+    color: #ffd700;
+    background-color: #8d4e9a;
+}
+.moto{
+    flex: 9;
+    min-height: 90vh;
+    padding: 2rem 8%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 10px;
+
+}
+
+
+.exp1, .exp2, .exp3{
+    flex: 1 1 30%;
+    height: 150px;
+    
+    font-family: Headliner45;
+    font-size: 6rem;
+    color: transparent;
+    -webkit-text-stroke: 4px white;
+    white-space: nowrap;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    min-height: 150px;
+    
+
+  
+}
+.exp2{
+    text-align: center;
+    
+}
+.exp3{
+    text-align: right;
+}
+.exp1 p, .exp2 p, .exp3 p{
+    margin: 0;
+}
+
+/*---------------------------------------------------------------ABOUT US---------------------------------*/
+
+.about-us{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8d4e9a ;
+
+    
+    padding: 2rem 8%;
+   
+    width: 100%;
+    color: white;
+}
+.about-us .flexcontainer_row{
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+.aboutusleft, .aboutusright{
+    flex: 0 0 40%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    padding: 3% 0;
+}
+
+.title_au{
+    flex: 2;
+    
+}
+
+.t1_au{
+    flex: 4;
+}
+
+.im1_au{
+    flex: 5;
+    background-image: url(../images/home1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 360px;
+}
+
+.im2_au{
+    flex : 5;
+    background-image: url(../images/home2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 360px;
+}
+
+.t2_au{
+    flex: 3;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+
+}
+.t2_au p{
+    margin-bottom: 0;
+}
+
+/*---------------------------------------------------------------Collab---------------------------------*/
+.collab{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white ;
+    
+    padding: 2rem 8%;
+    min-width: 360px;
+    color: #8d4e9a;
+}
+.collab .flexcontainer_row{
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.collableft, .collabright{
+    flex: 0 0 40%;
+    height: 100vh;
+    display: flex;
+    padding: 3% 0;
+}
+
+.collableft{
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.title_collab{
+    flex: 2 ;
+}
+
+.logo_bm{
+    flex: 4;
+    background-image: url(../images/babymeta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.videoclip {
+    flex: 5;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100%; 
+    min-width: 360px;
+}
+
+
+
+
+.discoball{
+    height: 100%;
+    width: 100%;
+    min-width: 360px;
+    background-image: url(../images/discoball.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*---------------------------------------------------------------Biography---------------------------------*/
+
+.biography{
+    width: 100%;
+    min-height: 200vh;
+    padding: 2rem 8%;
+    background-color: #8d4e9a;
+    color: white;
+}
+
+
+.title_bio{
+    flex:1;
+    padding: 2% 0;
+}
+
+.bio1, .bio2, .bio3, .bio4{
+    flex: 4 ;
+    min-height: 40vh;
+    min-width: 360x;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+
+}
+.bio1::after, .bio2::after, .bio3::after {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    border: 1px solid white;
+    bottom: 0;
+    
+    
+
+}
+.t1_bio, .t2_bio,.t3_bio, .t4_bio{
+    flex: 0 1 40%;
+    height: 40vh;
+    min-width: 360px;
+    padding-top: 7%;
+}
+
+
+.t1_bio p, .t2_bio p,.t3_bio p, .t4_bio p{
+    margin: 0;
+    
+}
+.im1_bio,.im2_bio, .im3_bio, .im4_bio{
+    flex: 0 1 40%;
+    height:40vh;
+    margin: 1.25rem 0;
+    min-width: 360px;
+
+}
+
+.im1_bio{
+    background-image: url(../images/bio1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.im2_bio{
+    background-image: url(../images/bio2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.im3_bio{
+    background-image: url(../images/bio3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.im4_bio{
+    background-image: url(../images/bio4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*---------------------------------------------------------------albums---------------------------------*/
+/*---------------------------------------------------------------last album---------------------------------*/
+.albums{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 8%;
+    background-color:white;
+    
+}
+
+.title_albums{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1rem;
+   color:#8d4e9a; 
+}
+
+
+
+
+
+.info_album{
+    flex: 8;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.tekkno{
+    flex: 1 1 50%; 
+    height: 88vh;
+    min-width: 360px;
+}
+
+.img_tekkno{
+    height: 100%;
+    background-image: url(../images/tekkno.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.info_tekkno{
+    flex: 1 1 50%;
+    background-color: #8d4e9a;
+    height: 88vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    
+}
+
+.fecha_tekkno{
+    width: fit-content;
+    flex: 1;
+    font-family: RobotoThin;
+
+}
+.nombre_tekkno{
+    width: fit-content;
+    flex: 2;
+    font-family: Headliner45;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.songs{
+    flex: 6 0 50%;
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    font-family: RobotoBold;
+}
+
+.song1, .song2, .song3, .song4{
+    flex: 1 0 20%;
+    width: 100%;
+    
+   
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+
+.cta_fullalbum{
+    flex: 2;
+    font-family: RobotoLight;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    min-width: 420px;
+}
+
+.cta_fullalbum a{
+
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+}
+
+.cta_fullalbum a:hover{
+    color: #8d4e9a;
+    background-color: white;
+}
+/*---------------------------------------------------------------older albums---------------------------------*/
+
+.older_albums{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 8%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    background-color: white;
+
+}
+
+.disc1, .disc2, .disc3, .disc4, .disc5, .disc6 {
+    flex: 1 1 33%;
+    height: 50vh;
+    padding: 3% 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 360px;
+}
+
+.img_disc1{
+    height: 50%;
+    background-image: url(../images/disco1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img_disc2{
+    height: 50%;
+    background-image: url(../images/disco2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img_disc3{
+    height: 50%;
+    background-image: url(../images/disco3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img_disc4{
+    height: 50%;
+    background-image: url(../images/disco4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img_disc5{
+    height: 50%;
+    background-image: url(../images/disco5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img_disc6{
+    height: 50%;
+    background-image: url(../images/disco6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.info_disc{
+    height: 50%;
+    background-color: #8d4e9a;
+    color: white;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.fecha_disc{
+    flex: 0 0 10%;
+    font-family: RobotoLight;
+    font-size: .5rem;
+}
+
+.nombre_disc{
+    flex: 0 0 60%;
+    font-family: Headliner45;
+    font-size: 1.3rem;
+}
+
+.cta_escuchar{
+    flex: 0 0 30%;
+    font-family: RobotoLight;
+    text-transform: uppercase;
+
+}
+
+.cta_escuchar a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.cta_escuchar a:hover{
+    color: #8d4e9a;
+    background-color: white;
+}
+
+.fecha_disc, .nombre_disc, .cta_escuchar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/*---------------------------------------------------------------tours---------------------------------*/
+
+.tour{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/TourBG1.jpg);
+    padding: 2rem 8%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    color: #ffd700;
+}
+.tour{
+    min-width: 500px;
+}
+
+.tour_top{
+    flex: 9;
+    display: flex;
+    flex-flow: row wrap;
+}
+.tour_bottom{
+    flex: 1;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.more_msg{
+    min-width: 360px;
+}
+.more_msg h1{
+   
+    margin: 20px;
+}
+
+.tour_left, .tour_right{
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.tour_left{
+    flex: 0 0 50%;
+}
+.tour_right{
+    flex: 0 0 50%;
+    align-items: center;
+}
+
+.title_tour{
+    height: 40vh;
+    margin-bottom: auto;
+
+}
+
+.img_tekknotour{
+    height: 100%;
+    background-image: url(../images/tourTekkno.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tour_2024, .tour_2025{
+    display: flex;
+    flex-flow: column;
+
+}
+
+.title_tour_year{
+    flex: 1;
+    
+}
+
+.dates{
+    flex:1 ;
+
+
+}
+
+#dates_2024, #dates_2025{
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    padding: 0 ;
+    min-width: 360px;
+    
+
+    
+}
+
+#dates_2024 li , #dates_2025 li {
+    margin: 15px 0;
+    
+    
+    
+}
+
+#dates_2024 li a, #dates_2025 li a{
+    text-decoration: none;
+    font-family: RobotoBlack;
+    font-size: 0.8rem;
+    color:#ffd700;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 5px;
+    border: 2px solid #ffd700;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    
+}
+
+#dates_2024 li a:hover, #dates_2025 li a:hover{
+    background-color: #ffd700;
+    color: black;
+}
+
+/*---------------------------------------------------------------past tours---------------------------------*/
+
+.past_tours{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 8%;
+    display: flex;
+    flex-flow: row;
+
+    background-color: #0d0d0f;
+}
+
+.title_past_tours{
+    flex: 1;
+    color: #ffd700;
+    padding: 1% 0;
+}
+
+.imgs_tour{
+    flex: 8;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tour1, .tour2, .tour3, .tour4, .tour5, .tour6{
+    flex: 1 1 30%;
+    height: 40vh;
+    padding: 2% 2%;
+    min-width: 360px;
+
+}
+
+    
+
+.img_tour1{
+    background: url("../images/tour1.jpg");
+
+}
+.img_tour2{
+    background: url("../images/tour2.jpg");
+
+}
+.img_tour3{
+    background: url("../images/tour3.jpg");
+}
+.img_tour4{
+    background: url("../images/tour4.jpg");
+
+}
+.img_tour5{
+    background: url("../images/tour5.jpg");
+
+}
+.img_tour6{
+    background: url("../images/tour6.jpg");
+
+}
+.img_tour1,.img_tour2,.img_tour3,.img_tour4,.img_tour5,.img_tour6{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.enlace_ig{
+    flex: 1;
+    display: flex;
+    padding: 2% 0;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+.enlace_ig a{
+    text-decoration: none;
+    color: #ffd700;
+    transition: background-color 0.3s ease;
+    
+    
+}
+
+.enlace_ig a h2{
+
+    border: 2px solid #ffd700;
+    padding: .5rem;
+}
+
+.icono_ig{
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #ffd700;
+}
+
+.enlace_ig a h2:hover{
+    background-color:rgba(255, 255, 255, 0.25);
+}
+
+
+/*---------------------------------------------------------------contact---------------------------------*/
+.contact{
+    width: 100%;
+    min-height: 50vh;
+    padding: 2rem 8%;
+    color: #8d4e9a;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.contact .flexcontainer_row{
+    justify-content: space-between;
+}
+.contact_left, .contact_right{
+    flex: 0 0 40%;
+    height: 45vh;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    
+    
+}
+.contact_right{
+    justify-content: flex-end;
+    background: white;
+}
+
+.contact_left::after{
+    content: "";
+    position: absolute;
+    height: 75%;
+    right: -25%;
+    background: #8d4e9a;
+    bottom: 11%;
+    width: 2px;
+}
+.title_contact{
+    flex: 1;
+    
+    
+    
+}
+.title_contact h1{
+    padding: 0;
+    margin: 0;
+}
+.contact_inst{
+    flex: 2;
+    font-family: RobotoBold;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-top: .5rem;
+    min-width: 360px;
+    
+}
+.contact_inst h3{
+    margin-top: 1.5rem;
+}
+.contact_dir{
+    flex: 2;
+    display: flex;
+    font-size: 0.8rem;
+    flex-flow: column;
+    font-family: RobotoThin;
+    text-align: left;
+    white-space: nowrap;
+    justify-content: center;
+    
+}
+.contact_dir1, .contact_dir2, .contact_dir3,.contact_dir4{
+    
+    padding-top: .5%;
+}
+.newsletter-title{
+    flex: 3;
+    width: 100%;
+    margin-bottom: .9rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    
+    
+}
+.contact_dir1 p, .contact_dir2 p, .contact_dir3 p,.contact_dir4 p{
+    margin: 0;
+}
+.contact_dir1{
+    margin-top: auto;
+}
+
+
+.newsletter-form {
+    flex: 2;
+    width: 100%;
+    min-width: 360px;
+    
+}
+.newsletter-form h2{
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    gap: 4%;
+}
+
+
+.input-wrapper-text {
+    position: relative;
+    flex: 1 0 48%;
+    
+     /* Ajusta el ancho de cada campo */
+}
+.input-wrapper-email {
+    position: relative;
+    width: 100%; 
+    margin-bottom: .8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    font-family: RobotoRegular;
+    border: none;
+    border-bottom: 2px solid #8d4e9a;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+input::placeholder{
+    color: #8d4e9a;
+    font-family: RobotoThin;
+}
+/* Los pseudo-elementos ahora aplicados a los envolventes */
+.input-wrapper-text::before,
+.input-wrapper-text::after,
+.input-wrapper-email::before,
+.input-wrapper-email::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #8d4e9a;
+    height: 0.8rem;
+}
+
+.input-wrapper-text::before,
+.input-wrapper-email::before  {
+    left: 0;
+    top: 40%;
+}
+
+.input-wrapper-text::after,
+.input-wrapper-email::after  {
+    right: 0;
+    top: 40%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-family: BebasNeue;
+    font-size: 1.3rem;
+    background-color: #8d4e9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.2rem;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #733b7a;
+}
+
+
+
+/*---------------------------------------------------------------footer--------------------------------*/
+footer{
+    
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    min-width: 360px;
+}
+
+.footer{
+    width: 100%;
+    background:#0d0d0f;
+    padding: 2rem 8%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+
+
+
+.logo_footer{
+    flex: 1;
+    height: 18vh;
+    background-image: url(../images/eclogo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 14vh;
+
+}
+.publi{
+    flex : 6;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 8rem;
+    gap: 5rem;
+    align-content: flex-end;
+    
+
+}
+.publi1, .publi2, .publi3{
+    flex: 1;
+    height: 23vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+
+.img_publi1{
+    flex: 1;
+    background-image: url(../images/publi1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.img_publi2{
+    flex: 1;
+    background-image: url(../images/publi2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: auto;
+}
+.img_publi3{
+    flex: 1;
+    height: 100%;
+    background-image: url(../images/publi3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.info_publi{
+    flex: 3;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.menu_footer{
+    flex: 1;
+    height: 35vh;
+    max-width: 335px;/*para que quede alineado con el resto de items al contraer*/
+    
+}
+
+
+#menu_col{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+#menu_col li{
+    text-align: right;
+    margin: 0;
+}
+
+#menu_col li a{
+    text-decoration: none;
+    font-family: Headliner45;
+    font-size: 1.3rem;
+    color:#ffd700;
+    text-transform: uppercase;
+    padding: .5rem;
+   
+    
+    transition: background-color 0.3s ease;
+}
+
+#menu_col li a:hover{
+    background-color: #ffd700;
+    color: #8d4e9a;
+}
+
+
+
+.subfooter{
+    width: 100%;
+    background:white;
+    padding: 1rem 8%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.copyright{
+    height: 100%;
+    flex: 1 0 60%;
+
+    padding: .2rem;
+}
+
+.copyright p{
+    font-family: RobotoRegular;
+    margin: 0;
+    font-size: 24px;
+    color: #8d4e9a;
+}
+
+
+
+.rrss{
+
+    flex: 1 0 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 0.2rem;
+    gap: 10px;
+}
+
+.rrss *{
+    flex:  0 1;
+    height: 1.4rem;
+
+}
